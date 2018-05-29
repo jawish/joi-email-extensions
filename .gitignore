@@ -1,0 +1,19 @@
+# IDEs
+.idea
+.vscode
+.project
+
+# NPM/Yarn
+npm-debug.log
+node_modules
+yarn.lock
+yarn-error.log
+npm-shrinkwrap.json
+
+# OS
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+._*
+*/._*
+*/*/._*

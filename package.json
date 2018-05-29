@@ -1,0 +1,53 @@
+{
+  "name": "joi-email-extensions",
+  "version": "0.0.1",
+  "description": "Joi extensions for email normalization, MX record validation, matching a domain pattern and checking for free/disposable email provider domains.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run lint && rimraf ./lib && babel ./src --out-dir lib",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "repository": "git://github.com/jawish/joi-email-extensions.git",
+  "keywords": [
+    "joi",
+    "schema",
+    "extension",
+    "validation",
+    "email",
+    "free",
+    "disposable"
+  ],
+  "author": "Jawish Hameed (jawish@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jawish/joi-email-extensions/issues"
+  },
+  "homepage": "https://github.com/jawish/joi-email-extensions#readme",
+  "peerDependencies": {
+    "joi": ">10.x.x"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.0.1",
+    "joi": "10.x.x",
+    "regenerator-runtime": "^0.11.1",
+    "rimraf": "^2.6.2",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "deasync": "^0.1.13",
+    "disposable-email-domains": "^1.0.33",
+    "micromatch": "^3.1.10",
+    "normalize-email": "^1.1.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
